@@ -1,0 +1,13 @@
+.formulario-colaborador{
+    background-color: rgba(0, 0, 0, 0.10);
+    max-width: 1500px;
+    margin: 60px auto;
+    padding: 30px 90px;
+    box-shadow: 7px 7px 15px 0px #00000014;
+    border-radius: 20px;
+}
+
+.formulario-colaborador h3{
+    font-size: 32px;
+    line-height: 43px;
+}
