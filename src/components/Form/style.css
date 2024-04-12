@@ -1,4 +1,14 @@
-.formulario-colaborador{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.form-collaborator button,
+.form-input,
+.form-input input,
+.form-input select,
+.form-input select option{
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-collaborator{
     background-color: rgba(0, 0, 0, 0.10);
     max-width: 1500px;
     margin: 60px auto;
@@ -7,7 +17,60 @@
     border-radius: 20px;
 }
 
-.formulario-colaborador h3{
+.form-collaborator h3{
     font-size: 32px;
     line-height: 43px;
 }
+
+.form-collaborator button{
+    background-color: #6278F7;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+}
+
+.form-collaborator button:hover{
+    background-color: #4b5cbb;
+}
+
+/* ----- Campos do formulário ----- */
+
+.form-input{
+    margin-bottom: 20px;
+}
+
+.form-input label{
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form-input input, select{
+    font-weight: 500;
+    font-size: 12px;
+    color: #AFAFAF;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    padding: 0 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(180, 180, 180);
+    border-radius: 8px;
+}
+
+.form-input input,
+.form-input select::placeholder,
+.form-input select,
+.form-input select option{
+    color: #212121;    
+}
+
+.form-input select option{
+    font-weight: 500;
+    font-size: 12px;
+}
+   

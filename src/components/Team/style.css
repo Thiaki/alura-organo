@@ -1,0 +1,84 @@
+.cards{
+    text-align: center;
+}
+
+.cards h3{
+    font-size: 40px;
+    line-height: 72px;
+    color: #6278F7;
+    margin-bottom: 0;
+}
+
+.cards hr{
+    width: 60px;
+    border: none;
+    border-bottom: solid 4px #6278F7;
+    margin: 10px auto 60px;
+}
+
+.cards .team{
+    padding: 30px;
+}
+
+.cards .team h4{
+    font-size: 28px;
+    line-height: 43px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cards .team hr{
+    width: 32px;
+    margin: 10px auto;
+    border-bottom: solid 4px;
+    border-radius: 8px;
+}
+
+.cards .team .itens-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards .team .itens-card .card{
+    width: 262px;
+    height: 272px;
+}
+
+.cards .team .itens-card .card .mainColor{
+    width: 100%;
+    height: 30%;
+    height: 100px;
+    border-radius: 16px 16px 0 0;
+}
+
+.cards .team .itens-card .card .content{
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+    width: 100%;
+    height: 70%;
+}
+
+.cards .team .itens-card .card .mainColor img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 30px auto auto;
+}
+
+.cards .team .itens-card .card .content h2{
+    padding: 60px 0 10px;
+    margin: 0;
+    color: #6278F7;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cards .team .itens-card .card .content p{
+    padding: 0 0 10px;
+    margin: 0;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+}
