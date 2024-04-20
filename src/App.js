@@ -10,7 +10,6 @@ function App() {
   const [collaborators, setCollaborators] = useState([]);
 
   const addCollaborator = (collaborator) => {
-    debugger
     setCollaborators([...collaborators, collaborator]);
   }
 
@@ -55,7 +54,7 @@ function App() {
   return (
     <div className='header-banner'>
       <Banner image="././image/Header.png" alt="Banner Principal" />
-      <Form teams={teams.map(team => team.name)} newCollaborator={(collaborator) => addCollaborator(collaborator)} />
+      <Form teams={teams.map(team => team.name)} addCollaborator={addCollaborator} />
       <Team teams={teams} collaborators={collaborators} />
       <Footer />
     </div>

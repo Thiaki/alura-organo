@@ -13,7 +13,7 @@ const Form = (props) => {
     
     const formSubmit = (e) => {
         e.preventDefault();
-        props.newCollaborator({
+        props.addCollaborator({
             name,
             position,
             image,
@@ -40,7 +40,7 @@ const Form = (props) => {
                     value = {position}
                     setValue = {setPosition}
                     required={true}
-                    label="Cargo"
+                    label="Cargo" 
                     placeholder="Digite seu cargo"
                 />
                 <InputText
