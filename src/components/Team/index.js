@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import '../../styles/components/team.sass';
 import Cards from './Cards';
 
 const Team = (props) => {

@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
+import '../src/styles/main.sass';
+
 import Banner from './components/Banner';
 import Form from './components/Form';
 import Team from './components/Team';
 import Footer from './components/Footer';
-
-import './App.css';
 
 function App() {
 
@@ -48,214 +48,113 @@ function App() {
     }
   ]);
 
-  const inicial = [
+  const initialTeam = [
     {
       id: uuidv4(),
       favorite: false,
-      name: 'JULIANA AMOASEI',
-      position: 'Desenvolvedora de software e instrutora',
-      image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-      team: teams[0].name
-    },
-    
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'DANIEL ARTINE',
-      position: 'Engenheiro de Software na Stone Age',
-      image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      name: 'Eduardo Thiaki',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[0].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'GUILHERME LIMA',
-      position: 'Desenvolvedor Python e JavaScript na Alura',
-      image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+      name: 'Eduardo Yoshida',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[0].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'PAULO SILVEIRA',
-      position: 'Hipster e CEO da Alura',
-      image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      team: teams[0].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'JULIANA AMOASEI',
-      position: 'Desenvolvedora de software e instrutora',
-      image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      name: 'Eduardo Thiaki',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[1].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'DANIEL ARTINE',
-      position: 'Engenheiro de Software na Stone Age',
-      image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      name: 'Eduardo Yoshida',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[1].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'GUILHERME LIMA',
-      position: 'Desenvolvedor Python e JavaScript na Alura',
-      image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-      team: teams[1].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'PAULO SILVEIRA',
-      position: 'Hipster e CEO da Alura',
-      image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      team: teams[1].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'JULIANA AMOASEI',
-      position: 'Desenvolvedora de software e instrutora',
-      image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      name: 'Eduardo Thiaki',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[2].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'DANIEL ARTINE',
-      position: 'Engenheiro de Software na Stone Age',
-      image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      name: 'Eduardo Yoshida',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[2].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'GUILHERME LIMA',
-      position: 'Desenvolvedor Python e JavaScript na Alura',
-      image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-      team: teams[2].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'PAULO SILVEIRA',
-      position: 'Hipster e CEO da Alura',
-      image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      team: teams[2].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'JULIANA AMOASEI',
-      position: 'Desenvolvedora de software e instrutora',
-      image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      name: 'Eduardo Thiaki',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[3].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'DANIEL ARTINE',
-      position: 'Engenheiro de Software na Stone Age',
-      image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      name: 'Eduardo Yoshida',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[3].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'GUILHERME LIMA',
-      position: 'Desenvolvedor Python e JavaScript na Alura',
-      image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-      team: teams[3].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'PAULO SILVEIRA',
-      position: 'Hipster e CEO da Alura',
-      image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      team: teams[3].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'JULIANA AMOASEI',
-      position: 'Desenvolvedora de software e instrutora',
-      image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      name: 'Eduardo Thiaki',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[4].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'DANIEL ARTINE',
-      position: 'Engenheiro de Software na Stone Age',
-      image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      name: 'Eduardo Yoshida',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[4].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'GUILHERME LIMA',
-      position: 'Desenvolvedor Python e JavaScript na Alura',
-      image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-      team: teams[4].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'PAULO SILVEIRA',
-      position: 'Hipster e CEO da Alura',
-      image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-      team: teams[4].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'JULIANA AMOASEI',
-      position: 'Desenvolvedora de software e instrutora',
-      image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+      name: 'Eduardo Thiaki',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[5].name
     },
     {
       id: uuidv4(),
       favorite: false,
-      name: 'DANIEL ARTINE',
-      position: 'Engenheiro de Software na Stone Age',
-      image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-      team: teams[5].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'GUILHERME LIMA',
-      position: 'Desenvolvedor Python e JavaScript na Alura',
-      image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-      team: teams[5].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'PAULO SILVEIRA',
-      position: 'Hipster e CEO da Alura',
-      image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+      name: 'Eduardo Yoshida',
+      position: 'Estudante de Front-End',
+      image: 'https://github.com/Thiaki.png',
       team: teams[5].name
     },
   ]
 
-  const [collaborators, setCollaborators] = useState(inicial);
+  const [collaborators, setCollaborators] = useState(initialTeam);
 
   const addCollaborator = (collaborator) => {
     setCollaborators([...collaborators, collaborator]);
   }
 
   const addTeam = (newTeam) => {
-    if(teams.some(team => team.name === newTeam.name)){
-      return;
-    }
     setTeams([...teams, newTeam]);
-    return true;
   }
 
   const deleteCollaborator = (id) => {

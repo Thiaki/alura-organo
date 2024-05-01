@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style.css';
+import '../../../../styles/components/team.sass';
 import { IoIosCloseCircle } from "react-icons/io";
 import { FaRegHeart, FaHeart  } from "react-icons/fa6";
 
