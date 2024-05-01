@@ -3,7 +3,6 @@ import './style.css';
 import Cards from './Cards';
 
 const Team = (props) => {
-
     return(
         <>
         {props.collaborators.length > 0 && (
@@ -16,7 +15,10 @@ const Team = (props) => {
                             key={team.name}
                             team={team}
                             collaborators={props.collaborators.filter(collaborator => collaborator.team === team.name)}
-                        /> )}
+                            deleteCollaborator={props.deleteCollaborator}
+                            modifyColor={props.modifyColor}
+                            favoriteCard={props.favoriteCard}
+                        />)}
                     )
                 }
             </section>

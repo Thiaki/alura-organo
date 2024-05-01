@@ -29,3 +29,14 @@
 .footer a:hover{
     color: #4b5cbb;
 }
+
+@media (max-width: 660px) {
+    .footer{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    .footer .social img{
+        margin: 10px auto;
+    }
+}
