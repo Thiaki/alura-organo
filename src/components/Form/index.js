@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Input from './Input';
 import InputSelect from './InputSelect';
 import Button from '../Button';
-import './style.css';
+import '../../styles/components/form.sass';
 
 const Form = (props) => {
 
@@ -14,8 +14,6 @@ const Form = (props) => {
 
     const [newTeam, setNewTeam] = useState('');
     const [newColor, setNewColor] = useState('');
-    
-    const [timesDuplicados, setTimesDuplicados] = useState(false);
 
     const submitCollaborator = (e) => {
         e.preventDefault();
@@ -41,10 +39,6 @@ const Form = (props) => {
         })
         setNewColor('');
         setNewTeam('');
-        if(props.addTeam){
-            console.log( props.addTeam)
-            setTimesDuplicados(true);
-        }
     }
 
     return(
@@ -93,10 +87,6 @@ const Form = (props) => {
                     label="Nome"
                     placeholder="Digite o nome do time"
                 />
-                {timesDuplicados
-                    ? <p>Nome Criado</p>
-                    : <p>Nome Não Criado</p>
-                }
                 <Input
                     value={newColor}
                     setValue={setNewColor}

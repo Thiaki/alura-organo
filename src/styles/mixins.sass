@@ -1,0 +1,18 @@
+@use 'variables'
+
+@mixin text($color: #FFF, $size, $weight: 600)
+    color: $color
+    font-size: $size
+    font-weight: $weight
+
+@mixin transition($component: all, $time: .3s, $mode: linear)
+    transition: $component $time $mode
+
+@mixin display-flex($justify-content, $align-itens)
+    display: flex
+    justify-content: $justify-content
+    align-items: $align-itens
+
+@mixin width-height($width, $height)
+    width: $width
+    height: $height

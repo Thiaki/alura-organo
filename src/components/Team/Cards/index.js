@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style.css';
+import '../../../styles/components/team.sass';
 import Card from './Card';
 import hexToRgba from 'hex-to-rgba';
 
