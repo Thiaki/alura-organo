@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import '../src/styles/main.sass';
@@ -48,106 +48,16 @@ function App() {
     }
   ]);
 
-  const initialTeam = [
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Thiaki',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[0].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Yoshida',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[0].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Thiaki',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[1].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Yoshida',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[1].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Thiaki',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[2].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Yoshida',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[2].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Thiaki',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[3].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Yoshida',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[3].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Thiaki',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[4].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Yoshida',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[4].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Thiaki',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[5].name
-    },
-    {
-      id: uuidv4(),
-      favorite: false,
-      name: 'Eduardo Yoshida',
-      position: 'Estudante de Front-End',
-      image: 'https://github.com/Thiaki.png',
-      team: teams[5].name
-    },
-  ]
+  const [collaborators, setCollaborators] = useState([]);
 
-  const [collaborators, setCollaborators] = useState(initialTeam);
+  // Collaboradores iniciais estão sendo pegos do arquivo db.json na pasta initialTeam 
+  useEffect(() => {
+    fetch('http://localhost:8080/initialTeam')
+      .then(initialTeam => initialTeam.json())
+      .then(collaborators => {
+        setCollaborators(collaborators)
+      })
+  }, [])
 
   const addCollaborator = (collaborator) => {
     setCollaborators([...collaborators, collaborator]);

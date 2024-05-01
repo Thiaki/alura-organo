@@ -1,0 +1,116 @@
+{
+    "initialTeam": [
+        {
+          "id": 1,
+          "favorite": false,
+          "name": "Eduardo Thiaki",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Programação"
+        },
+        {
+          "id": 2,
+          "favorite": false,
+          "name": "Eduardo Yoshida",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Programação"
+        },
+        {
+          "id": 3,
+          "favorite": false,
+          "name": "Eduardo Thiaki",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Front-End"
+        },
+        {
+          "id": 4,
+          "favorite": false,
+          "name": "Eduardo Yoshida",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Front-End"
+        },
+        {
+          "id": 5,
+          "favorite": false,
+          "name": "Eduardo Thiaki",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Data Science"
+        },
+        {
+          "id": 6,
+          "favorite": false,
+          "name": "Eduardo Yoshida",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Data Science"
+        },
+        {
+          "id": 7,
+          "favorite": false,
+          "name": "Eduardo Thiaki",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Devops"
+        },
+        {
+          "id": 8,
+          "favorite": false,
+          "name": "Eduardo Yoshida",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Devops"
+        },
+        {
+          "id": 9,
+          "favorite": false,
+          "name": "Eduardo Thiaki",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "UX e Design"
+        },
+        {
+          "id": 10,
+          "favorite": false,
+          "name": "Eduardo Yoshida",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "UX e Design"
+        },
+        {
+          "id": 11,
+          "favorite": false,
+          "name": "Eduardo Thiaki",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Mobile"
+        },
+        {
+          "id": 12,
+          "favorite": false,
+          "name": "Eduardo Yoshida",
+          "position": "Estudante de Front-End",
+          "image": "https://github.com/Thiaki.png",
+          "team": "Mobile"
+        },
+        {
+            "id": 13,
+            "favorite": false,
+            "name": "Eduardo Thiaki",
+            "position": "Estudante de Front-End",
+            "image": "https://github.com/Thiaki.png",
+            "team": "Inovação e Gestão"
+          },
+          {
+            "id": 14,
+            "favorite": false,
+            "name": "Eduardo Yoshida",
+            "position": "Estudante de Front-End",
+            "image": "https://github.com/Thiaki.png",
+            "team": "Inovação e Gestão"
+          }
+    ]
+}
